@@ -1,5 +1,12 @@
 /* --- Variables --- */
 
+:root{
+    --theme-color: #3e84da;
+    --link-color: #daa33e;
+    --content-width: 760px;
+    --text-alignment: center;
+}
+
 /* --- Main styles --- */
 
 h1, h2, h3{
@@ -18,23 +25,23 @@ nav.main-nav ul{
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    text-align: var(--text-alignment);
 }
 
 nav a{
-    color: #daa33e;
+    color: var(--theme-color);
 }
 
 .banner{
-    background: #3e84da;
+    background: var(--link-color);
     color: #fff;
     font-size: 1.6em;
-    text-align: center;
+    text-align: var(--text-alignment);
     padding: 100px 0 160px;
 }
 
 .content{
-    width: 760px;
+    width: var(--content-width);
     margin: 0 auto;
     position: relative;
     top: -100px;
@@ -44,11 +51,11 @@ nav a{
 
 .spot{
     margin: 0 40px 80px;
-    text-align: center;
+    text-align: var(--text-alignment);
 }
 
 .spot h2{
-    color: #3e84da;
+    color: var(--theme-color);
 }
 
 .spot p{
@@ -58,7 +65,7 @@ nav a{
 }
 
 .content a{
-    color: #daa33e;
+    color: var(--link-color);
     font-size: 1.2em;
 }
 
@@ -70,13 +77,13 @@ footer{
 footer .blurbs{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 760px;
+    max-width: var(--content-width);
     margin: 0 auto;
     grid-gap: 40px;
 }
 
 footer .blurb{
-    text-align: center;
+    text-align: var(--text-alignment);
     color: #333;
     line-height: 2em;
     font-size: 0.9em
